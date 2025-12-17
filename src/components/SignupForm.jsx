@@ -154,9 +154,7 @@ export default function SignupForm({ onEmailSubmit }) {
         </div>
       </form>
 
-      <div className="scan-section">
-        <button type="button" className="submit-btn" onClick={() => setScanOpen(true)}>Open scanner</button>
-      </div>
+      
 
       <div className="modal-overlay" role="dialog" aria-modal="true" hidden={!scanOpen} onClick={(e) => { if (e.target === e.currentTarget) closeScan(); }}>
         <div className="modal">
